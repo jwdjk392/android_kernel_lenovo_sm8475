@@ -32,6 +32,8 @@ HOSTCFLAGS_sorttable.o += -DUNWINDER_ORC_ENABLED
 HOSTLDLIBS_sorttable = -lpthread
 endif
 
+HOSTCFLAGS_extract-cert.o += -Wno-deprecated-declarations
+
 # The following programs are only built on demand
 hostprogs += unifdef
 
